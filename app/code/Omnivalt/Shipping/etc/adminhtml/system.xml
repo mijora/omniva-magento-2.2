@@ -10,11 +10,11 @@
         <section id="carriers">
             <group id="omnivalt" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Omniva</label>
-                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Enabled for Checkout</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Title</label>
                 </field>
                 <field id="account" translate="label comment" type="obscure" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
@@ -25,7 +25,7 @@
                     <label>Password</label>
                     <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                 </field>
-                <field id="production_webservices_url" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="production_webservices_url" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Gateway URL</label>
                 </field>
                 <field id="cod_company" translate="label" type="text" sortOrder="91" showInDefault="1" showInWebsite="1" showInStore="0" >
@@ -49,12 +49,12 @@
                 <field id="company_phone" translate="label" type="text" sortOrder="97" showInDefault="1" showInWebsite="1" showInStore="0" >
                     <label>Company phone</label>
                 </field>
-                <field id="pickup" translate="label" type="select" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="pickup" translate="label" type="select" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Pick up from store type</label>
                     <source_model>Omnivalt\Shipping\Model\Source\Method</source_model>
                 </field>
                 <!--
-                <field id="pickup_terminal" translate="label" type="select" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="pickup_terminal" translate="label" type="select" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Pickup terminal</label>
                     <source_model>Omnivalt\Shipping\Model\Source\Terminal</source_model>
                     <depends>
@@ -62,7 +62,7 @@
                     </depends>
                 </field>
             -->
-                <field id="max_package_weight" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="max_package_weight" translate="label" type="text" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Maximum Package Weight</label>
                     <validate>validate-number validate-zero-or-greater</validate>
                 </field>
@@ -101,15 +101,15 @@
                         <field id="free_shipping_enable">1</field>
                     </depends>
                 </field>
-                <field id="allowed_methods" translate="label" type="multiselect" sortOrder="190" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="allowed_methods" translate="label" type="multiselect" sortOrder="190" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Allowed Methods</label>
                     <source_model>Omnivalt\Shipping\Model\Source\Method</source_model>
                     <can_be_empty>1</can_be_empty>
                 </field>
-                <field id="specificerrmsg" translate="label" type="textarea" sortOrder="240" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="specificerrmsg" translate="label" type="textarea" sortOrder="240" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Displayed Error Message</label>
                 </field>
-                <field id="sallowspecific" translate="label" type="select" sortOrder="250" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="sallowspecific" translate="label" type="select" sortOrder="250" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Ship to Applicable Countries</label>
                     <frontend_class>shipping-applicable-country</frontend_class>
                     <source_model>Magento\Shipping\Model\Config\Source\Allspecificcountries</source_model>
